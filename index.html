@@ -39,7 +39,7 @@
             <a class="nav-link" href="#owner">Owner</a>
         </li>
         </ul>
-        <a href="#" class="btn btn-outline-brand ms-lg-3">Book Now</a>
+        <a href="#booking" class="btn btn-outline-brand ms-lg-3">Book Now</a>
       </div>
     </div>
   </nav>
@@ -55,7 +55,7 @@
           <p>This salon provides several services to pamper yourself with
             several treatments provided, "beauty requires care", love yourself
             and keep your body and hair soft</p>
-          <a href="#" class="btn btn-brand">Get in touch</a>
+          <!--<a href="#booking" class="btn btn-brand">booking now</a>-->
 
         </div>
       </div>
@@ -115,7 +115,7 @@
             <div class="content">
               <h3 class="h5">Hair Treatment</h3>
               <p>consisting creambath, hair cut, hair color, and smoothing</p>
-              <a href="#" class="link-more">KNow More<i class="ri-arrow-right-line icon"></i></a>
+              <a href="service.html" class="link-more">KNow More<i class="ri-arrow-right-line icon"></i></a>
             </div>
           </div>
 
@@ -131,10 +131,6 @@
           </div>
 
         </div>
-      </div>
-      <div class="cta-btns">
-        <a href="#" class="btn btn-brand me-sm-2">Appointment</a>
-        <a href="#" class="btn btn-outline-brand">Get in Touch</a>
       </div>
     </div>
   </section>
@@ -181,7 +177,66 @@
 
 
   <!-- BOOKING -->
+  <section id="booking">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Booking</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih !!!</strong> Pesan Anda Sudah Kami Terima 
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <form name="inicp-contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama"/>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">E-Mail</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" name="email"/>
+              <div id="email" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="typePhone">Nomor Whatsapp</label>
+              <input type="tel" id="typePhone" class="form-control" />
+              <div id="nomor" class="form-outline"></div>
+            </div>
+            <!-- <div class="input-group mb-3">
+              <div class="input-group-text">
+                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+              </div>
+              <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div> -->
 
+            <div class="mb-3">
+              <label for="inputService" class="form-label">Pilih Service </label>
+              <select id="inputService" class="form-select">
+                <option selected>Service dan Harga</option>
+                <option>Body Treatment Rp.150.000</option>
+                <option>Hair Treatment Rp.200.000</option>
+                <option>Nail Treatment Rp.200.000</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-kirim rounded">Kirim</button>
+            
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <!-- // BOOKING -->
 
 
